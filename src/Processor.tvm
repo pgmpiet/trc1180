@@ -1,0 +1,38 @@
+process
+
+clk 2
+tip 3
+jsp 4
+jso 5
+jsd 6
+st0 7
+st1 8
+st2 9
+
+evaluate
+
+1. `op` is 16.
+2. `RunningEvaluationStandardInput` is 1
+3. `RunningEvaluationStandardOutput` is 1
+4. `InstructionLookupClientLogDerivative`
+5. `RunningProductOpStackTable` is 3
+6. `RunningProductRamTable`
+7. `RunningProductJumpStackTable`
+8. `RunningEvaluationHashInput`
+9. `RunningEvaluationHashDigest`
+V. `RunningEvaluationSponge`
+
+recurse
+
+1. The composition of instruction bits `ib0` through `ib6` corresponds to the current instruction `ci`.
+1. The instruction bit `ib0` is a bit.
+1. The instruction bit `ib1` is a bit.
+1. The instruction bit `ib2` is a bit.
+1. The instruction bit `ib3` is a bit.
+1. The instruction bit `ib4` is a bit.
+1. The instruction bit `ib5` is a bit.
+1. The instruction bit `ib6` is a bit.
+1. The padding indicator `IsPadding` is either 0 or 1.
+1. If the current padding row is a padding row and `clk` is not 1, then the clock jump difference lookup multiplicity is 0.
+
+halt

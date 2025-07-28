@@ -1,0 +1,47 @@
+plex $\mathit{mp}$ to $\mathit{mp}'$ under $\mathit{mp}$.
+
+$$ \forall i < j < k \in \lbrace 0, \ldots, T-1 \rbrace : \mathit{mp} \stackrel{\triangle}{=} M[i][\mathtt{mp}] = M[k][\mathtt{mp}] \Rightarrow M[j][\mathtt{mp}] = \mathit{mp} $$
+
+$$ \forall i < j \in \lbrace 0, \ldots, T-1 \rbrace : M[i][\mathtt{mp}] = M[j][\mathtt{mp}] \Rightarrow M[i][\mathtt{clk}] <_{\mathbb{Z}} M[j][\mathtt{clk}] $$
+
+mu$<_{\mathbb{Z}}$ < int
+
+divnne n if p iff P < $\mathit{mp}$
+
+read
+ 
+$$ \forall k \in \lbrace 0 , \ldots, T-1 \rbrace : P[k][\mathtt{ci}] = \mathit{read} \, \Rightarrow \left( (1) \, \Rightarrow \, (2) \right)$$
+
+$$ (1) \exists i  \in \lbrace 0 , \ldots, k \rbrace : P[i][\mathtt{ci}] = \mathit{write} \, \wedge \, P[i+1][\mathtt{val}] = P[k][\mathtt{val}] \, \wedge \, P[i][\mathtt{mp}] = P[k][\mathtt{mp}]$$
+
+$$ (2) \nexists j \in \lbrace i+1 , \ldots, k-1 \rbrace : P[j][\mathtt{ci}] = \mathit{write} \, \wedge \, P[i][\mathtt{mp}] = P[k][\mathtt{mp}] $$
+
+let $P$ process
+
+map table $\mathit{mp}$, select the sublist of rows $P_{\mathit{mp}} \stackrel{\triangle}{=} \lbrace P[k] \, | \, P[k][\mathtt{mp}] = \mathit{mp} \rbrace$ in order.
+
+sublist $\mathit{mp}$.
+
+construct $P_{\mathit{mp}}$: 
+
+recurse $k$ 
+
+specify `tik` $P_{\mathit{mp}}$
+
+iff $i$ sate $(1)$ then construct 
+if and sate $(2)$.  
+
+shift $k$
+
+process loop
+
+iff $P[i][\mathtt{ci}] \neq \mathit{write}$ then jump to noop if i<$\mathit{write}$-instruction guarantees that $\mathit{val}$ = self
+if i>self jump to M and shift
+
+specify M[8,9]
+
+process int proceed if noop then loop
+
+evaluate proof
+
+validate
