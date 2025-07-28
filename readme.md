@@ -1,5 +1,5 @@
-<img src="/src/img/trc1180.png" width="17" hieght"106">
-P2<br>
+P2
+# This is a Sandbox Generator for trc1180 in pgmpiet
 1072 1071<br>
 127<br>
 D<br>
@@ -28,7 +28,7 @@ trim y until x<br>
 <br>
 Sandbox user input<br>
 <br>
-t:/>trc1180<br>
+t:/>trc1180<img src="/src/img/trc1180.png" width="17" hieght"106"><br>
 __________________________________________________________________<br>
 Sys Admin                                                         |<br>
 Slicex36 iff 1180                                                 |<br>
